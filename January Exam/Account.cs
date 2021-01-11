@@ -14,7 +14,6 @@ namespace January_Exam
         public decimal balance { get; set; }
         public DateTime interestdate { get; set; }
 
-
         public Account(string FName, string LName, decimal Balance, DateTime InterestDate)
         {
             firstname = FName;
