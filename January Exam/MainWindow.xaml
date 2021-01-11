@@ -6,10 +6,39 @@
         xmlns:local="clr-namespace:January_Exam"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid x:Name="AD_tblk" RenderTransformOrigin="0.5,0.506">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
+        <CheckBox x:Name="CurrentAc_tblk" Content="Current Accounts" HorizontalAlignment="Left" Margin="62,44,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="SavingsAC_tblk" Content="Savings Account" HorizontalAlignment="Left" Margin="187,44,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="AccountList_lbx" HorizontalAlignment="Left" Height="281" Margin="30,115,0,0" VerticalAlignment="Top" Width="268" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.099"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
+        <Button x:Name="Deposit_btn" Content="Deposit" HorizontalAlignment="Left" Margin="686,74,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Withdraw_btn" Content="Withdraw" HorizontalAlignment="Left" Margin="686,140,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Interest_btn" Content="Interest" HorizontalAlignment="Left" Margin="686,207,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="Transaction_tblk" HorizontalAlignment="Left" Margin="394,363,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top"/>
+        <TextBox x:Name="Transaction_tbx" HorizontalAlignment="Left" Height="23" Margin="533,362,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="417,59,0,0" TextWrapping="Wrap" Text="Account Details" VerticalAlignment="Top"/>
+        <TextBlock x:Name="FName_tblk" HorizontalAlignment="Left" Margin="394,98,0,0" TextWrapping="Wrap" Text="First Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="LName_tblk" HorizontalAlignment="Left" Margin="395,147,0,0" TextWrapping="Wrap" Text="Last Name" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Balance_tblk" HorizontalAlignment="Left" Margin="395,194,0,0" TextWrapping="Wrap" Text="Balance" VerticalAlignment="Top" RenderTransformOrigin="0.471,1.676"/>
+        <TextBlock x:Name="ACType_tblk" HorizontalAlignment="Left" Margin="394,247,0,0" TextWrapping="Wrap" Text="Account Type" VerticalAlignment="Top"/>
+        <TextBlock x:Name="Interest_tblk" HorizontalAlignment="Left" Margin="394,301,0,0" TextWrapping="Wrap" Text="Interest Rate" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DisplayFName_tblk" HorizontalAlignment="Left" Margin="487,101,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DisplayLName_tblk" HorizontalAlignment="Left" Margin="487,150,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DisplayBalance_tblk" HorizontalAlignment="Left" Margin="487,194,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DisplayACType_tblk" HorizontalAlignment="Left" Margin="487,247,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="DisplayInterest_tblk" HorizontalAlignment="Left" Margin="487,301,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="AccountList_tblk" HorizontalAlignment="Left" Margin="137,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Account List"/>
 
     </Grid>
 </Window>
