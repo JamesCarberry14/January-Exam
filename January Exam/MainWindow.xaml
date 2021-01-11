@@ -12,7 +12,7 @@
         </Grid.ColumnDefinitions>
         <CheckBox x:Name="CurrentAc_tblk" Content="Current Accounts" HorizontalAlignment="Left" Margin="62,44,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="SavingsAC_tblk" Content="Savings Account" HorizontalAlignment="Left" Margin="187,44,0,0" VerticalAlignment="Top"/>
-        <ListBox x:Name="AccountList_lbx" HorizontalAlignment="Left" Height="281" Margin="30,115,0,0" VerticalAlignment="Top" Width="268" RenderTransformOrigin="0.5,0.5">
+        <ListBox x:Name="AccountList_lbx" HorizontalAlignment="Left" Height="281" Margin="30,115,0,0" VerticalAlignment="Top" Width="268" RenderTransformOrigin="0.5,0.5" SelectionChanged="AccountList_lbx_SelectionChanged">
             <ListBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -22,8 +22,8 @@
                 </TransformGroup>
             </ListBox.RenderTransform>
         </ListBox>
-        <Button x:Name="Deposit_btn" Content="Deposit" HorizontalAlignment="Left" Margin="686,74,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="Withdraw_btn" Content="Withdraw" HorizontalAlignment="Left" Margin="686,140,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Deposit_btn" Content="Deposit" HorizontalAlignment="Left" Margin="686,74,0,0" VerticalAlignment="Top" Width="75" Click="Deposit_btn_Click"/>
+        <Button x:Name="Withdraw_btn" Content="Withdraw" HorizontalAlignment="Left" Margin="686,140,0,0" VerticalAlignment="Top" Width="75" Click="Withdraw_btn_Click"/>
         <Button x:Name="Interest_btn" Content="Interest" HorizontalAlignment="Left" Margin="686,207,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBlock x:Name="Transaction_tblk" HorizontalAlignment="Left" Margin="394,363,0,0" TextWrapping="Wrap" Text="Transaction Amount" VerticalAlignment="Top"/>
         <TextBox x:Name="Transaction_tbx" HorizontalAlignment="Left" Height="23" Margin="533,362,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
